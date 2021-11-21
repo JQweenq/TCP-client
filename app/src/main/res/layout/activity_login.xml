@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_logo" />
+
+    <EditText
+        android:layout_below="@+id/logo"
+        android:id="@+id/name"
+        style="@style/TextInput"
+        android:hint="@string/name"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/ip"
+        style="@style/TextInput"
+        android:layout_below="@+id/name"
+        android:fontFamily="@font/roboto_mono"
+        android:hint="@string/ip"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/port"
+        style="@style/TextInput"
+        android:layout_below="@+id/ip"
+        android:hint="@string/port"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/roboto_mono"
+        android:onClick="SignIn"
+        android:text="@string/connect"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

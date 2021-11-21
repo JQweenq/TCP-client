@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TCP</string>
+    <string name="name">Name</string>
+    <string name="connect">Подключиться</string>
+    <string name="ip">IPv4</string>
+    <string name="port">Port</string>
+</resources>
