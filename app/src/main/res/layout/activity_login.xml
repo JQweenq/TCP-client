@@ -14,11 +14,13 @@
         android:src="@mipmap/ic_logo" />
 
     <EditText
-        android:layout_below="@+id/logo"
         android:id="@+id/name"
         style="@style/TextInput"
+        android:layout_below="@+id/logo"
         android:hint="@string/name"
-        android:maxLength="10"/>
+        android:lines="1"
+        android:maxLength="10"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/ip"
