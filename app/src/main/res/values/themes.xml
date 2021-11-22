@@ -17,7 +17,6 @@
     </style>
 
     <style name="AppTheme.Launch" parent="AppTheme">
-        window
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
