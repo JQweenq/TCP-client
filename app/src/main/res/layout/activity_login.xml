@@ -39,15 +39,9 @@
         android:maxLength="5" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/btn_bg"
-        android:fontFamily="@font/roboto_mono"
         android:onClick="SignIn"
         android:text="@string/connect"
-        android:textColor="@color/text"
-        android:textSize="14sp"
-        android:textAllCaps="false"/>
+        style="@style/Button"/>
 
 </RelativeLayout>
