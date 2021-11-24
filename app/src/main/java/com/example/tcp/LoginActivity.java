@@ -30,13 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         if(!name.getText().toString().equals("") && !ip.getText().toString().equals("") && !port.getText().toString().equals("") && Integer.parseInt(port.getText().toString()) != 0){
             Intent I = new Intent(this, MainActivity.class);
             I.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            I.putExtra("name", name.getText().toString());
+            I.putExtra("ip", ip.getText().toString());
+            I.putExtra("port", port.getText().toString());
             startActivity(I);
         }
-        else showDialog();
+        else showDialog("Проверьте правильность заполнения полей.");
     }
 
-    public void showDialog(){
-        ErrorDialog dialog = new ErrorDialog();
+    public void showDialog(String description){
+        ErrorDialog dialog = new ErrorDialog(description);
         dialog.show(getSupportFragmentManager(), "custom");
     }
 }

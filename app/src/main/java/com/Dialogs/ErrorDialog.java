@@ -8,6 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
 public class ErrorDialog extends DialogFragment {
+    public String description;
+
+    public ErrorDialog(String description) {
+        this.description = description;
+    }
 
     @NonNull
     public Dialog onCreateDialog(Bundle state){
@@ -15,7 +20,7 @@ public class ErrorDialog extends DialogFragment {
 
         return builder
                 .setTitle("Ошибка!")
-                .setMessage("Проверьте правильность заполнения полей.")
+                .setMessage(description)
                 .setPositiveButton("OK", null)
                 .create();
     }

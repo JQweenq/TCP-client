@@ -28,7 +28,7 @@
         android:layout_below="@+id/name"
         android:fontFamily="@font/roboto_mono"
         android:hint="@string/ip"
-        android:maxLength="12" />
+        android:maxLength="15" />
 
     <EditText
         android:id="@+id/port"
